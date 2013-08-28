@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Alvin Home Page</title>	
+
+	<style>
+      
+	
+    </style>
+	
+	
+    <meta charset="UTF-8">
+    <link href="anythingSlider/anythingslider.css" rel="stylesheet">
+    <link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+	<link href="css/styles.css" type="text/css" rel="stylesheet">	
+    <script src="_js/jquery-1.7.2.min.js"></script>
+    <script src="anythingSlider/jquery.anythingslider.min.js"></script>
+    <script src="_js/jquery.easing.1.3.js"></script>
+    <script src="fancybox/jquery.fancybox-1.3.4.min.js"></script>	
+	<script src="_js/nav1.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('#slider').anythingSlider();
+	
+	$('.iframe').fancybox({
+		width : '80%',
+		height : '80%',
+		titlePosition: 'outside'
+	});//end fancybox
+	
+	 $("#navigation").navPlugin({
+       'itemWidth': 150,
+       'itemHeight': 30,
+       'navEffect': "slide",
+       'speed': 250
+     });//end navPlugin 
+	 
+	 $("#nav_home").hover(
+	   function(){
+		var message = "首頁";
+		$('#nav_home').text(message);	   
+	   },
+	   function(){
+		var message = "Home";
+		$('#nav_home').text(message);	   
+	   }	 
+	 );//end hover	 
+	
+	 $("#nav_resume").hover(
+	   function(){
+		var message = "履歷";
+		$('#nav_resume').text(message);	   
+	   },
+	   function(){
+		var message = "Resume";
+		$('#nav_resume').text(message);	   
+	   }	 
+	 );//end hover	
+ 
+	 $("#nav_hobby").hover(
+	   function(){
+		var message = "興趣";
+		//$('#nav_hobby a:not(#nav_hobby_photography)').text(message);	
+        $('#nav_hobby').text(message);			
+	   },
+	   function(){
+		var message = "Hobby";
+		$('#nav_hobby').text(message);	   
+	   }	 
+	 );//end hover	
+	 
+	 $("#nav_hobby_speech").hover(
+	   function(){
+		var message = "英語演講";
+		$('#nav_hobby_speech').text(message);	   
+	   },
+	   function(){
+		var message = "Speech";
+		$('#nav_hobby_speech').text(message);  
+	   }	 
+	 );//end hover	
+	 
+	 $("#nav_hobby_photography").hover(
+	   function(){
+		var message = "攝影";
+		$('#nav_hobby_photography').text(message);	   
+	   },
+	   function(){
+		var message = "Photography";
+		$('#nav_hobby_photography').text(message);	   
+	   }	 
+	 );//end hover
+
+	 $("#nav_hobby_drum").hover(
+	   function(){
+		var message = "爵士鼓";
+		$('#nav_hobby_drum').text(message);	   
+	   },
+	   function(){
+		var message = "Drum";
+		$('#nav_hobby_drum').text(message);	   
+	   }	 
+	 );//end hover
+	 
+	 $("#nav_message_board").hover(
+	   function(){
+		var message = "留言板";
+		$('#nav_message_board').text(message);	   
+	   },
+	   function(){
+		var message = "Message board";
+		$('#nav_message_board').text(message);	   
+	   }	 
+	 );//end hover	
+
+}); // end ready
+</script>	
+  </head>  
+  <body>
+    <div class="wrapper">
+	  <header>
+	  <!-- <img src="rsc/image/dream_3.png" width="130" height="130" alt="dream" class="align-left">  -->
+	  <!-- <p class="HeadLine_Title">ALVIN'S WORLD </p> -->
+	  <p class="HeadLine_Title">BELIEVE DREAM </p>
+	  <br><br>
+	  
+	  <nav>
+	    <ul id="navigation" >
+		  <li><a href="index.html" class="current" id="nav_home">Home</a></li>
+		  <li><a href="resume.html" class="iframe" id="nav_resume">Resume</a></li>
+		  <li><a href="hobby_speech.html" id="nav_hobby">Hobby</a>
+		     <ul>
+              <li><a href="hobby_speech.html" id="nav_hobby_speech">Speech</a></li>			 
+              <li><a href="#" id="nav_hobby_photography">Photography</a></li>
+              <li><a href="#" id="nav_hobby_drum">Drum</a></li>
+            </ul>	
+		  </li>
+		  <li><a href="index.html" id="nav_message_board">Message board</a></li>
+		</ul>
+	  </nav>
+	  </header>
+	  <section class="main_article">
+	    <article>
+		  <br>		  		  
+		    <p class="speech_title_center">C10: The Journey I Never Forget</p>			
+		    <video src="rsc/video/alvin_C10_480x320.mp4" id="video_speech" width="480" height="320" preload controls loop>  </video>  
+		    <p class="main_article_description">		   
+                <br>
+                Many years ago, when I was a university student, I wandered around the campus. Out of blue, a girl stood in front of me and said…
+                Girl: Our club is Toastmasters. Here is our advertisement menu sheet.
+                Alvin: “Toast”? This club will bake toast for everyone to eat? What a good club! I want to join! 
+                Girl: Namely, during the intermission, we will provide refreshments for attendants; 
+                nevertheless, the goal of Toastmasters is to provide a place for everyone to practice Public Speaking of English. Do you want to join us?
+                Alvin: Wow! Public speaking of English sounds cool and awesome. But I speak poor English. 
+                It’s too difficult for me. Thanks for your introduction, I’ll keep it in mind and make further consideration. Bye!
+                Afterward, I knew that English is very important. While I major in Electrical Engineering, I am an engineer-to-be in the future. 
+                To alleviate my guilty, I didn’t join Toastmasters. I even cheated myself. My loading (studying) was heavy; besides, about one billion people speak Chinese around the world. 
+                The above reasons seemed reasonable and acceptable for me. Is this the end of my story? No! Let me tell you why.
+
+                <br>
+                Before I tell you the answer, I want to ask all of you a question: “What do you want from NTU Toastmasters?” Improving English ability, right? I happened to meet the same problem.
+                Graduated from university, I realized that quality ability of English speaking does matter in EE, especially working with customers from other continents.
+                In order to cure my “bad” English, I make good use of the keyword: “how to improve English speaking” by searching Google websites. I found two perfect places for learning. 
+                One is cram school, the other is NTUTM. With given time and resource, I would like to analyze two important indexes to know which one I need to join.
+                The first index is quality. Cram schools use English textbooks all the time. While NTU Toastmasters, we don’t use textbooks. 
+                We have member kits which helps us to compose scripts for prepared speeches. What’s more, we have well-experienced senior members as mentors to help you before formal delivery. 
+                We even have video records of your every oral presentation. They will be published on YouTube. When you want to see your performance, you can see on YouTube. 
+                We hope that all members can make improvements from where you start, and stand on the shoulders of giants. So the winner goes to… NTU Toastmasters!
+                And the second index is price. It is said: “Good quality equals to expensive.” 
+                Is that right? No. You can have quality learning resources here with not-so-expensive payments. Apparently, NTU Toastmasters wins again!
+                According to this comparative list, the winner goes to NTUTM.
+
+                <br>
+                Someone wants to ask me, if I go to cram school, would I still improve my English ability that much? Yes. But I 1stick to NTUTM. Why? 
+                In NTUTM, I can see my drawbacks in “Public Speaking” of English. It took me a lot of time to overcome it. 
+                For example, two years ago, I was very afraid of standing on the stage, and say something in English. It made me feel nervous and uncomfortable. 
+                When the table topic session master threw a question and invited someone to answer question on the stage, what I could do is (to) look ground and pray 
+                “Don’t call me, please!”. Now, I have the courage to stand out and speak (English) loudly. I can make my eye-contact with table topic session masters.
+                I successfully overcome my drawback (“Public English Speaking”)! This place is where we can grow and encourage each other mutually. I used to be a shy boy for decades.
+                I didn’t have the courage to speak in public, less to say in English! But now I overcome it. 
+  
+                <br>
+                NTU Toastmasters not only affect my English ability but help me to overcome the drawback. To be honest, it does more than I have expected. In my past years, I was the kind of person who complained a lot. But complaints will do no good. It will lead you to negative thinking. In NTUTM, I made great friends with positive thinking. I am encouraged by what they think and what they do. If you ask me, what is the most significant decision I make by far? I would say…Joining NTU Toastmasters! It’s an unforgettable and meaningful journey for me. I truly learn a lot from you guys.
+                Dear friends and guests: just join us and start up your own journey. You will see things differently than you’ve never expected before. In NTU TM, “I See things differently, do things differently. And my world has become different!” TME.</p>
+		</article>	
+		
+		<!--
+		<article>
+			<img src="rsc/image/NTUTM_friends_photo_2.jpg" width="600"  alt="NTUTM" class="align-left">
+		</article>
+		-->
+	
+	  </section>
+      <aside> 
+	    <section > 
+
+		  <h2>NTU Toastmasters </h2>
+		  <P class="speech_aside">
+		      I delivered my keynote speech at NTU Toastmasters Demo meeting.<br><br>
+			  It's my honor to be a speaker at NTU Toastmasters Demo meeting. 
+			  In this speech I showed my appreciation to NTU Toastmasters. 
+			  I learn a lot from this club.
+			  I not only polish my English ability but also broaden my horizons. 
+			  I make a lot of excellent friends who have positive thinking.<br>
+			  Do you want to practice your English ?
+			  Do you want to overcome public speaking? 
+			  Welcome to join NTU Toastmasters.<br>		  
+			  <br>
+			  </p>
+			  	 
+		  <a href="http://ntutmweb.appspot.com/" class="iframe">NTU Toastmasters website</a>
+		  
+		  <!--
+          Meeting Time: <br>
+		  Every Friday night PM6:30~9:30<br>
+	      Venue: <br>
+		  Second Student Activity Center.(第二學生活動中心)<br>		  
+		  -->
+		  
+		  	  
+	 	</section>  
+	  </aside>
+	  <footer>
+	    copyright &copy; 2013 Alvin's Web Page <br>
+		E-mail: <a href="mailto:alvin5468@yahoo.com.tw" class="iframe">alvin5468@yahoo.com.tw</a>
+	  </footer>
+	</div>	
+  </body>
+</html>
+
+<!--
+
+		
+-->

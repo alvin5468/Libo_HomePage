@@ -1,0 +1,224 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;}
+
+body {
+  color: #666666;
+  background-color: #f9f8f6;
+  background-image: url("../rsc/image/background.jpg");
+  background-position: center;
+  font-family: Georgia, times, serif;
+  line-height: 1.4em;
+  margin: 0px;}
+    	 
+  .wrapper {
+    width: 940px;
+    margin:20px auto 20px auto;
+	border: 0px solid #000000;
+	background-color: #ffffff;}
+
+  header {
+    height: 120px;
+	background-image: url("../rsc/image/header.jpg");}
+	
+	
+  p.HeadLine_Title{
+	  color: #cccccc;
+	  font-size: 44px;	
+	  text-shadow: 1px 1px 3px #000;
+	  font-family: Arial;
+	  position: relative;
+	  top: 25px;
+	  /*text-indent: 40px;	  */
+	  text-indent: 30%;
+	  /*margin: 50px auto 50px auto;*/
+	}
+	
+	p.main_article_description{
+	  width: 550px;
+      margin: 0px auto 30px auto;	
+      font-size: 18px;	
+      text-align: justify;	  
+	
+	}
+	
+
+    video#video_speech{
+	      width: 550px;
+          margin: 10px auto 10px 60px;	  	
+	 }
+	
+	 p.speech_title_center{	     
+	     margin: 10px 20px 10px 140px;	
+	     font-size: 140%;
+		 font-weight: bold;
+	}	
+	
+	
+  img.align-left{
+    float: left;
+	margin-right: 0px;
+  }  
+	/*
+  h1 {
+	text-indent: -9999px;
+	width: 940px;
+	height: 130px;
+	margin: 0px;}
+	*/
+	
+  nav, footer {
+    clear: both;
+    color: #ffffff;
+	background-color: #aeaca8;
+	height: 30px;}
+
+  nav ul {
+    margin: 0px;
+	padding: 5px 0px 5px 30px;}  
+	
+  nav li {
+    display: inline;
+	margin-right: 40px;}
+
+  nav li a{
+    color: #ffffff;}
+
+  nav li a:hover, nav li a.current{
+    color: #000000;}	
+  
+  section.main_article {
+    float: left;
+	width: 659px;
+	border-right: 1px solid #eeeeee;}
+
+  article {
+    clear: both;
+	overflow: auto;
+	width: 100%;}
+	
+  hgroup {
+    margin-top: 40px;}
+	
+  figure {
+    float: left;
+	width: 290px;
+	height: 220px;
+	padding: 5px;
+	margin: 50px;
+	border: 1px solid #eeeeee;}
+	
+  figcaption {
+    font-size: 90%;
+	text-align: left;}
+
+  aside {
+  width: 230px;
+  float: left;
+  padding: 0px 0px 0px 20px;}   
+	  
+  aside section a {
+  display: block;
+  padding: 0px;
+  border-bottom:: 1px solid #eeeeee;
+   color: #de6581;}    
+
+  aside section a:hover {
+  color: #985d6a;
+  background-color: #efefef;}      
+  
+  a {
+    color: #122692;
+	text-decoration: none;}
+	
+  h1, h2, h3 {
+    font-weight: normal;}
+  
+  h2{
+    margin: 10px 0px 5px 0px;
+	padding: 0px;} 
+
+  h3 {
+    margin: 10px auto 10px auto;  
+	color: #de6581;
+	font-size:110%}
+	
+  aside h2 {
+    margin:30px auto 10px 30px;
+	color: #122692;
+	font-size: 120%;
+	text-shadow: 1px 1px 2px #000;}
+	
+  aside h3 {
+    margin:30px auto 10px 55px;
+	color: #122692;
+	font-size: 150%;
+	text-shadow: 1px 1px 1px #000;}
+	
+  aside p.speech_aside{
+    margin:5px 5px 5px 5px;
+	color: #122692;
+	text-align: justify;}
+	
+  aside ul.main_page_aside{
+    margin:0px 0px 0px -20px;
+	color: #122692;}	
+	
+  footer {
+    font-size: 80%;
+    padding: 7px 0px 0px 20px;
+	height: 50px;}	
+	
+    img.Home_Page_aling_center{
+    display: block;
+    margin: 0px auto;
+	width: 355px;
+    height: 525px;
+	}
+
+	
+
+#navigation ul, #navigation li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#navigation a {
+	background-color: rgb(204,204,204);
+	text-decoration: none;
+	font: 16px 'ColaborateLightRegular', Arial, sans-serif;
+	text-indent: 10px;
+	border-top: 1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+	margin: 0px;
+	padding: 0px;
+	color: rgb(53,75,118);
+	position:  absolute;
+	z-index: 10;
+}
+#navigation a:hover {
+	border-top:3px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color: #555;
+	color: white;
+	
+}
+#navigation .stack > a {
+	background-image: url(../rsc/image/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 97% 8px;
+}
+#navigation .stack > a:hover {
+	background-position: 97% -78px;
+}
+#navigation ul .stack > a {
+	background-position: 97% -21px;
+}
+#navigation ul .stack > a:hover {
+	background-position: 97% -54px;
+}
+
+  

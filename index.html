@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Alvin Home Page</title>	
+    <meta charset="UTF-8">
+    <link href="anythingSlider/anythingslider.css" rel="stylesheet">
+    <link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+	<link href="css/styles.css" type="text/css" rel="stylesheet">	
+<style>
+
+</style>
+    <script src="_js/jquery-1.7.2.min.js"></script>
+    <script src="anythingSlider/jquery.anythingslider.min.js"></script>
+    <script src="_js/jquery.easing.1.3.js"></script>
+    <script src="fancybox/jquery.fancybox-1.3.4.min.js"></script>	
+	<script src="_js/nav1.1.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('#slider').anythingSlider();
+	
+	$('.iframe').fancybox({
+		width : '80%',
+		height : '80%',
+		titlePosition: 'outside'
+	});//end fancybox
+	
+	 $("#navigation").navPlugin({
+       'itemWidth': 150,
+       'itemHeight': 30,
+       'navEffect': "slide",
+       'speed': 250
+     });//end navPlugin 
+	 
+	 $("#nav_home").hover(
+	   function(){
+		var message = "首頁";
+		$('#nav_home').text(message);	   
+	   },
+	   function(){
+		var message = "Home";
+		$('#nav_home').text(message);	   
+	   }	 
+	 );//end hover	 
+	
+	 $("#nav_resume").hover(
+	   function(){
+		var message = "履歷";
+		$('#nav_resume').text(message);	   
+	   },
+	   function(){
+		var message = "Resume";
+		$('#nav_resume').text(message);	   
+	   }	 
+	 );//end hover	
+ 
+	 $("#nav_hobby").hover(
+	   function(){
+		var message = "興趣";
+		//$('#nav_hobby a:not(#nav_hobby_photography)').text(message);	
+        $('#nav_hobby').text(message);			
+	   },
+	   function(){
+		var message = "Hobby";
+		$('#nav_hobby').text(message);	   
+	   }	 
+	 );//end hover	
+	 
+	 $("#nav_hobby_speech").hover(
+	   function(){
+		var message = "英語演講";
+		$('#nav_hobby_speech').text(message);	   
+	   },
+	   function(){
+		var message = "Speech";
+		$('#nav_hobby_speech').text(message);  
+	   }	 
+	 );//end hover	
+	 
+	 $("#nav_hobby_photography").hover(
+	   function(){
+		var message = "攝影";
+		$('#nav_hobby_photography').text(message);	   
+	   },
+	   function(){
+		var message = "Photography";
+		$('#nav_hobby_photography').text(message);	   
+	   }	 
+	 );//end hover
+
+	 $("#nav_hobby_drum").hover(
+	   function(){
+		var message = "爵士鼓";
+		$('#nav_hobby_drum').text(message);	   
+	   },
+	   function(){
+		var message = "Drum";
+		$('#nav_hobby_drum').text(message);	   
+	   }	 
+	 );//end hover
+	 
+	 $("#nav_message_board").hover(
+	   function(){
+		var message = "留言板";
+		$('#nav_message_board').text(message);	   
+	   },
+	   function(){
+		var message = "Message board";
+		$('#nav_message_board').text(message);	   
+	   }	 
+	 );//end hover	
+
+
+
+	 
+	/*
+	$('#nav_home').mouseover(function() {
+		var message = "<p>You moused over a link</p>";
+		$('.main').append(message);
+		var message = "首頁";
+		$('#nav_home a').text(message);
+	}); // end mouseover
+	*/
+	
+}); // end ready
+</script>	
+  </head>  
+  <body>
+    <div class="wrapper">
+	  <header>
+	  <!-- <img src="rsc/image/dream_3.png" width="130" height="130" alt="dream" class="align-left">  -->
+	  <!-- <p class="HeadLine_Title">ALVIN'S WORLD </p> -->
+	  <p class="HeadLine_Title">BELIEVE DREAM </p>
+	  <br><br>
+	  
+	  <nav>
+	    <ul id="navigation" >
+		  <li><a href="index.html" class="current" id="nav_home">Home</a></li>
+		  <li><a href="resume.html" class="iframe" id="nav_resume">Resume</a></li>
+		  <li><a href="hobby_speech.html" id="nav_hobby">Hobby</a>
+		     <ul>
+              <li><a href="hobby_speech.html" id="nav_hobby_speech">Speech</a></li>			 
+              <li><a href="#" id="nav_hobby_photography">Photography</a></li>
+              <li><a href="#" id="nav_hobby_drum">Drum</a></li>
+            </ul>	
+		  </li>
+		  <li><a href="index.html" id="nav_message_board">Message board</a></li>
+		</ul>
+	  </nav>
+	  </header>
+	  <section class="main_article">
+	    <article>
+		  <br>		  
+		  <div class="main">
+            <!--  <p>Libo test </p>  -->
+          </div>	
+              <div id="slider">
+                <div><img src="rsc/image/libo_1.jpg" width="400" height="600" alt="libo chou"></a></div>
+                <div><img src="rsc/image/libo_2.jpg" width="500" height="500" alt="libo chou"></a></div>
+                <div><img src="rsc/image/libo_3.jpg" width="400" height="600" alt="libo chou"></a></div>
+              </div>
+			  <br>
+		<p class="main_article_description">
+		   Hi, I'm Alvin Chou. I'm a software engineer.
+           I work for ALi (IC design House, Taiwan).
+		   I have six years experience in software development. 
+		   I can speak English fluently(TOEIC:800).
+		   I'm a native speaker in Mandarin. 
+		   I also like to make a lot of friends. 
+		   <!--If you are interested in my background, working experience, please see my resume. -->
+		   Welcome to visit my web page.</p>
+		</article>	
+	
+	  </section>
+      <aside> 
+	    <section > 
+		  <h3>Alvin Chou </h3>
+		  Senior Software Engineer<br>
+		  <ul class="main_page_aside">
+		      <li> Current Company:</li> ALi (IC design house)
+			  <li> Previous Company:</li> Wistron Incorporation
+		      <li> Education :</li>  
+			      National Central University<br>
+				  
+		      <li> Personality:</li> ambitious, creative, <br>positive thinking, <br>target orientation
+		      <li> Speciality:</li> Software programming, <br>Good communication with customers, <br>Good cooperation between different divisions(PM, HW, QT, SW) 	
+          </ul>		  
+	 	</section>  
+	  </aside>
+	  <footer>
+	    copyright &copy; 2013 <br>
+		E-mail: <a href="mailto:alvin5468@yahoo.com.tw">alvin5468@yahoo.com.tw</a>
+	  </footer>
+	</div>	
+  </body>
+</html>
